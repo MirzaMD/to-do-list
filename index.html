@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    input:hover{
+          border: dotted 4px;
+          border-color: rgb(10, 116, 10);
+          cursor: pointer;
+    }
+    .boxShadow{
+        box-shadow: 2px 2px 5px black;
+
+    }
+</style>
+<header class="flex w-full justify-center items-center bg-green-800 h-[100px] sm:h-[150px]">
+    <h1 class="text-lg sm:text-3xl font-bold text-red-700">To-do list</h1>
+</header>
+<body>
+    <main>
+        <section class="flex justify-center mt-4 space-x-3 items-center">
+            <input type="text" placeholder="add an item " class="w-[200px] sm:w-[1000px] bg-red-400 text-yellow-300 h-[40px] sm:h-[55px] rounded-md text-lg sm:text-2xl">
+            <button class="bg-red-600 p-1 sm:p-2 flex justify-center items-center text-green-200 rounded-full p-1 sm:px-2 active:bg-red-800 boxShadow" id="add">add</button>
+        </section>
+        <section class="mt-4 flex flex-col justify-center items-center space-y-3" id="divHolder">
+        <div class="flex w-[400px] sm:w-[1000px] h-[70px] sm:h-[100px] bg-green-400 border-2 border-red-700 justify-between items-center">
+            <input type="checkbox" class="scale-[2] sm:scale-[3] relative left-5">
+            <p class="text-lg text-yellow-700 font-bold">this is the sample text</p>
+            <button class="p-2 sm:p-4 bg-red-800 text-green-200 rounded-full text-lg sm:text-xl font-mono boxShadow mr-2">delete</button>
+        </div>
+        <div class="flex w-[400px] sm:w-[1000px] h-[70px] sm:h-[100px] bg-green-400 border-2 border-red-700 justify-between items-center">
+            <input type="checkbox" class="scale-[2] sm:scale-[3] relative left-5">
+            <p class="text-lg text-yellow-700 font-bold">this is the sample text</p>
+            <button class="p-2 sm:p-4 bg-red-800 text-green-200 rounded-full text-lg sm:text-xl font-mono boxShadow mr-2">delete</button>
+        </div>
+        <div class="flex w-[400px] sm:w-[1000px] h-[70px] sm:h-[100px] bg-green-400 border-2 border-red-700 justify-between items-center">
+            <input type="checkbox" class="scale-[2] sm:scale-[3] relative left-5">
+            <p class="text-lg text-yellow-700 font-bold">this is the sample text</p>
+            <button class="p-2 sm:p-4 bg-red-800 text-green-200 rounded-full text-lg sm:text-xl font-mono boxShadow mr-2">delete</button>
+        </div>
+        <div class="flex w-[400px] sm:w-[1000px] h-[70px] sm:h-[100px] bg-green-400 border-2 border-red-700 justify-between items-center">
+            <input type="checkbox" class="scale-[2] sm:scale-[3] relative left-5">
+            <p class="text-lg text-yellow-700 font-bold">this is the sample text</p>
+            <button class="p-2 sm:p-4 bg-red-800 text-green-200 rounded-full text-lg sm:text-xl font-mono boxShadow mr-2">delete</button>
+        </div>
+        <div class="flex w-[400px] sm:w-[1000px] h-[70px] sm:h-[100px] bg-green-400 border-2 border-red-700 justify-between items-center">
+            <input type="checkbox" class="scale-[2] sm:scale-[3] relative left-5">
+            <p class="text-lg text-yellow-700 font-bold">this is the sample text</p>
+            <button class="p-2 sm:p-4 bg-red-800 text-green-200 rounded-full text-lg sm:text-xl font-mono boxShadow mr-2">delete</button>
+        </div>
+       </section>
+    </main>
+<script src="index.js"></script>    
+</body>
+</html>
